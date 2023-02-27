@@ -1,9 +1,9 @@
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bloc_api/univer_state.dart';
+import 'package:bloc_api/State/univer_state.dart';
 
-import 'model.dart';
+import '../models/model.dart';
 
 class CountryCubit extends Cubit<CountryState> {
   CountryCubit() : super(CountryState());
@@ -24,7 +24,11 @@ getApi(String name) async {
   state.univerModel?.add(newData);
   emit(CountryState(univerModel: state.univerModel));
 }
-
+delete(int index){
+  box?.delete(state.univerModel?[index].name);
+  state.univerModel?.removeAt(index);
+  emit(CountryState(univerModel: state.univerModel));
+}
 
 
 

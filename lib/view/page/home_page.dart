@@ -1,11 +1,11 @@
 import 'dart:ffi';
 
-import 'package:bloc_api/univer_cubit.dart';
-import 'package:bloc_api/univer_state.dart';
+import 'package:bloc_api/Cubit/univer_cubit.dart';
+import 'package:bloc_api/State/univer_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'information_page.dart';
+import '../companents/information_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

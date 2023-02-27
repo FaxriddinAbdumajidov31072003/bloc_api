@@ -1,6 +1,6 @@
 
 
-import 'model.dart';
+import '../models/model.dart';
 
 class CountryState {
   List<UniverResponse>? univerModel;

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'model.dart';
+import '../../models/model.dart';
 
 class InformationPage extends StatelessWidget {
   final UniverResponse univerResponse;

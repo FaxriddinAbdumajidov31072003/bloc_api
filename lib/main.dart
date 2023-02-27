@@ -1,11 +1,11 @@
-import 'package:bloc_api/univer_cubit.dart';
+import 'package:bloc_api/Cubit/univer_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'home_page.dart';
-import 'model.dart';
+import 'view/page/home_page.dart';
+import 'models/model.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
